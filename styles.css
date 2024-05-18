@@ -1,0 +1,367 @@
+<form action="send_email.php" method="post">
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001933;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #001933;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('BigData.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 2rem;
+	color: yellow;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.profile-photo-wrapper {
+    margin-left: auto; /* Push the photo to the right */
+}
+
+.profile-photo {
+    width: 250px; /* Set the width of the photo */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border: 3px solid #ffff00; /* Add a border around the photo */
+    border-radius: 50%; /* Make the photo circular */
+}
+
+.link-wrapper {
+    margin-top: 36px; /* Adjust to move the link down */
+    margin-left: 0px; /* Adjust to move the link right */
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+.link-wrapper a {
+    color: #ffff00; /* Set the color of the link (blue in this example) */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: 600; /* Set the font weight to a slightly bold value */
+}
+
+.link-wrapper a {
+    display: inline-block; /* Display the link as a block element */
+    padding: 10px 20px; /* Add padding to create space around the text */
+    background-color: black; /* Set the background color of the button */
+    color: yellow; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make the link text bold */
+}
+
+/* About section styles */
+.about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.skills {
+    padding: 50px 0; /* Adjust the top and bottom padding */
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.softwares {
+	margin-top: -100px; /* Adjust the negative margin to reduce the space */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.softwares h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.logo-item {
+    text-align: center;
+}
+
+.logo-item img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: 10px;
+}
+
+.logo-item p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+
+
+/* Visionary section styles */
+.visionary {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.visionary-box {
+    border: 9px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.visionary h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.visionary h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.visionary p {
+    font-size: 1.3rem;
+    color: #00ff00;
+}
+.visionary p1 {
+    font-size: 1.1rem;
+    color: #fff;
+}
+.visionary-box p1 {
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+}
+.visionary p2 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+/* Education section styles */
+.education {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.education-item {
+    margin-bottom: 40px;
+}
+
+.education-box {
+    border: 9px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.education-box h3 {
+    font-size: 1.8rem;
+    color: #fff; /* Adjust text color as needed */
+    margin-bottom: 10px;
+}
+
+.education-box p {
+    font-size: 1.4rem;
+    color: #fff; /* Adjust text color as needed */
+}
+
+.education-box p1 {
+    font-size: 0.9rem;
+    color: #fff; /* Adjust text color as needed */
+}
+.education-box p2 {
+    font-size: 0.9rem;
+    color: #ffff00; /* Adjust text color as needed */
+}
+
+
+/* Projects section styles */
+.projects {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px; /* Add space between "Projects" title and first project title */
+}
+.projects h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px; /* Add space between "Projects" title and first project title */
+}
+
+.project {
+    border: 9px solid #ffffff;
+	background-color: #000;	
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.project p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.project p1 {
+    font-size: 1.1rem;
+    color: #ffff00;
+    line-height: 1.6;
+}
+.project p2 {
+    font-size: 0.9rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+	color: #fff;
+}
+/* Footer styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+	
+}
+.contact-info {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+.contact-info p{
+	color: #fff;
+    display: inline-block;
+    margin-right: 40px; /* Adjust spacing between icons */
+}
+
+.contact-info p i {
+    font-size: 24px; /* Adjust icon size */
+	color: white; /* Set icon color to white */
+}
+
+
